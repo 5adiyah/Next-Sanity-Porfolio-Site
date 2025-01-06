@@ -1,6 +1,6 @@
 # 🌟 **Portfolio Website**
 
-This project is a showcase of my skills in building modern, accessible, and visually engaging web applications using **React** and **Sanity**. 🚀
+This project is a showcase of my skills in building modern, accessible, and visually engaging web applications using **React** and **Sanity**. 🚀 The original design is from FrontEnd Mentors Code Challenge 
 
 🌐 [**Live Demo**](https://nextsanity-portfolio.netlify.app/)
 

@@ -1,0 +1,43 @@
+// Flexbox Mixins
+@mixin flex-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+// Grid Mixin
+@mixin grid-container($columns, $gap: 1rem) {
+  display: grid;
+  gap: $gap;
+  grid-template-columns: repeat($columns, 1fr);
+}
+
+// Media Query Mixin
+/**
+* Usage: @include mq('md-up');
+*/
+@mixin mq($breakpoint) {
+  @if $breakpoint == lg-up {
+      @media (min-width: $screen-lg-min) {
+          @content;
+      }
+  } @else if $breakpoint == md-up {
+      @media (min-width: $screen-md) {
+          @content;
+      }
+  } @else if $breakpoint == sm-only {
+      @media (max-width: $screen-xs) {
+          @content;
+      }
+  }
+}

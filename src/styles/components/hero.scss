@@ -1,0 +1,12 @@
+.hero {
+    .hero-content {
+        @include flex-center;
+        @include flex-column;
+        gap: $spacing-base;
+        padding: 0 $spacing-base;
+
+        * {
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.about {
+    @include flex-center;
+    @include flex-column;
+    margin-top: 100px;
+    padding: 0 1rem;
+
+    @include mq('md-up') {
+        @include flex-row;
+        margin-bottom: 100px;
+    }
+
+    .cta {
+        margin-bottom: $spacing-med;
+    }
+
+    h2 {
+        margin-top: $spacing-large;
+    }
+
+    h2, p {
+        margin-bottom: $spacing-med;
+        text-align: center;
+    }
+
+    @include mq('md-up') {
+        h2, p, .cta {
+            text-align: left;
+        }
+    }
+
+    img {
+        max-width: 300px;
+        object-fit: cover;
+    }
+
+    @include mq('md-up') {
+        img {
+            max-width: 450px;
+        }
+    }
+
+    .text-container {
+        @include flex-center;
+        @include flex-column;
+        text-align: center;
+
+        @include mq('md-up') {
+            align-items: start;
+            padding: 4rem;
+        }
+    }
+}

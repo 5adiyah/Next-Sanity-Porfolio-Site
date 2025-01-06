@@ -1,0 +1,21 @@
+.cta {
+  border-radius: 28px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+
+  &.primary {
+      background-color: $scarlet-red;
+      color: #fff;
+  }
+
+  &:hover {
+      background-color: $seafoam-green;
+      color: $pale-black;
+      text-decoration: none;
+  }
+}

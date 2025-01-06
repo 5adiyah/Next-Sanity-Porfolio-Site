@@ -1,0 +1,71 @@
+body {
+  color: $pale-black;
+  font-family: $font-primary;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+h1 {
+  font-size: 2.25rem;
+  line-height: 3rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+p {
+  font-size: 1rem;
+  font-weight: lighter;
+  line-height: 1.5rem;
+}
+
+a {
+  color: $scarlet-red;
+  text-decoration: none;
+
+  &:hover {
+    color: $soft-coral;
+    text-decoration: underline;
+  }
+}
+
+/* Responsive Typography */
+@include mq(xs) {
+  h1 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
+@include mq(md-up) {
+  body {
+    font-size: 1rem; 
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    line-height: 3.25rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+}

@@ -1,0 +1,29 @@
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 $spacing-base;
+  position: relative;
+  width: 100%;
+}
+  
+.grid {
+  @include grid-container(12, $spacing-base);
+}
+
+.grid-col-1 {
+  grid-column: span 1;
+}
+
+.grid-col-2 {
+  grid-column: span 2;
+}
+
+.grid-col-3 {
+  grid-column: span 3;
+}
+  
+@include mq(sm) {  
+  .container {
+    padding: 0 $spacing-small;
+  }
+}

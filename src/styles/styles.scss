@@ -1,0 +1,19 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+
+// Global Styles
+@import 'globals/variables';
+@import 'globals/reset';
+@import 'globals/mixins';
+@import 'globals/buttons';
+@import 'globals/grid';
+@import 'globals/spacing';
+@import 'globals/typography';
+
+// Component Styles
+@import 'components/navbar';
+@import 'components/hero';
+@import 'components/services';
+@import 'components/about';
+@import 'components/projects';
+@import 'components/contact';

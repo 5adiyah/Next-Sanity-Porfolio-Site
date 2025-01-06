@@ -1,0 +1,80 @@
+.navigation {
+    @include flex-row();
+    align-items: center;
+    justify-content: space-between;
+    padding: $spacing-med 0;
+
+    .logo,
+    .menu-btn {
+        z-index: 1;
+    }
+
+    .menu-btn {
+        background: none;
+        border: none;
+        cursor: pointer;
+        z-index: 2;
+
+        img {
+            pointer-events: none; /* Prevent interaction with the image to allow btn interactions */
+        }
+    }
+
+    .menu-items {
+        background-color: $summer-yellow;
+        height: 100%;
+        left: 0;
+        opacity: 0;
+        padding: 100px $spacing-med 50px;
+        pointer-events: none;
+        position: absolute;
+        top: 0;
+        transform: translateY(-100%);
+        transition: transform 0.5s ease, opacity 0.5s ease;
+        width: 100%;
+
+        li {
+            margin: $spacing-base 0;
+            text-align: center;
+
+            a {
+                color: $pale-black;
+                font-size: 1.25rem;
+                line-height: 2rem;
+
+                &:focus {
+                    border: none;
+                    outline: none;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .menu-items.showMenu {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+
+    @include mq('md-up') {
+        .menu-btn {
+            display: none;
+        }
+
+        .menu-items {
+            @include flex-row;
+            background-color: transparent;
+            display: flex;
+            flex-direction: row;
+            gap: $spacing-med;
+            height: auto;
+            opacity: 1;
+            padding: 0;
+            pointer-events: auto;
+            position: static;
+            transform: translateY(0);
+            width: auto;
+        }
+    }
+}

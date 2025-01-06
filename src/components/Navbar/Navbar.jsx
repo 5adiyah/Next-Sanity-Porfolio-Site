@@ -41,13 +41,13 @@ export const Navbar = () => {
                 tabIndex={openMenu ? 0 : -1}
             >
                 <li role="menuitem">
-                    <a href="#about">About</a>
+                    <a href="#about" onClick={toggleMenu}>About</a>
                 </li>
                 <li role="menuitem">
-                    <a href="#portfolio">Portfolio</a>
+                    <a href="#portfolio" onClick={toggleMenu}>Portfolio</a>
                 </li>
                 <li role="menuitem">
-                    <a href="#contact">Contact</a>
+                    <a href="#contact" onClick={toggleMenu}>Contact</a>
                 </li>
             </ul>
         </nav>
